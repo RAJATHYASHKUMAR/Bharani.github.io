@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bharani R | Electrical Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume and portfolio of Bharani R, Electrical Engineer.">
+  <style>
+    /* ===== Theme: Minimal Light with Warm Accent ===== */
+    :root{
+      --bg:#fafafa;
+      --text:#1f2937;        /* slate-800 */
+      --muted:#6b7280;       /* slate-500 */
+      --card:#ffffff;
+      --border:#e5e7eb;      /* slate-200 */
+      --accent:#e9713a;      /* warm orange */
+      --accent-weak:#fde8df; /* pale accent wash */
+      --link:#0ea5e9;        /* sky-600 */
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.7;
+    }
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      width:min(100%,1100px);
+      margin:0 auto;
+      padding:1.25rem;
+    }
+
+    /* ===== Layout: Sidebar + Content ===== */
+    .layout{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:1.25rem;
+    }
+    @media (max-width: 900px){
+      .layout{grid-template-columns: 1fr}
+    }
+
+    /* ===== Sidebar ===== */
+    .sidebar{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .cover{
+      height:120px;
+      background: linear-gradient(135deg, var(--accent-weak), #fff);
+      border-bottom:1px solid var(--border);
+    }
+    .profile{
+      padding:1rem 1.25rem;
+    }
+    .avatar{
+      width:96px;height:96px;border-radius:12px;object-fit:cover;
+      border:3px solid #fff; box-shadow:0 4px 12px rgba(0,0,0,.12);
+      transform: translateY(-50%); background:#ddd;
+    }
+    .name{margin-top:-2.5rem; margin-bottom:.25rem; font-weight:800; font-size:1.5rem;}
+    .title{margin:0; color:var(--muted); font-weight:600;}
+
+    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow: var(--shadow);}
+    .section{padding:1.25rem 1.25rem;}
+    .section h2{margin:0 0 .75rem; font-size:1.2rem; letter-spacing:.2px;}
+    .pill{
+      display:inline-block; padding:.35rem .6rem; border:1px solid var(--border);
+      border-radius:999px; margin:.25rem .35rem .35rem 0; font-size:.9rem; background:#fff;
+    }
+    .list{list-style:none; padding:0; margin:0; display:grid; gap:.4rem;}
+    .list li{display:flex; gap:.5rem;}
+    .list li strong{color:#111827}
+
+    /* ===== Content ===== */
+    .content{
+      display:grid; gap:1.25rem;
+    }
+    .hero.card{padding:1.5rem;}
+    .hero h1{margin:0 0 .25rem; font-size:2rem;}
+    .hero p{margin:.5rem 0 1rem; color:var(--muted);}
+    .cta{display:flex; gap:.5rem; flex-wrap:wrap;}
+    .btn{
+      background:var(--accent); color:#fff; border:none; border-radius:10px;
+      padding:.6rem 1rem; font-weight:700; box-shadow:0 6px 14px rgba(233,113,58,.2);
+    }
+    .btn-outline{
+      background:transparent; color:var(--text); border:1px solid var(--border); border-radius:10px;
+      padding:.6rem 1rem; font-weight:600;
+    }
+
+    .block.card{padding:1.25rem;}
+    .block h3{margin:0 0 .75rem; font-size:1.25rem;}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+    @media (max-width: 800px){ .grid-2{grid-template-columns:1fr} }
+
+    .edu-item{padding:.75rem 0; border-bottom:1px dashed var(--border)}
+    .edu-item:last-child{border-bottom:none}
+
+    .proj{border:1px solid var(--border); border-radius:12px; padding:1rem; background:#fff}
+    .proj h4{margin:0 0 .35rem}
+    .tags{list-style:none; display:flex; flex-wrap:wrap; gap:.4rem; margin:.5rem 0 0; padding:0}
+    .tags li{background: var(--accent-weak); color:#8a3a1a; padding:.25rem .5rem; border-radius:999px; font-size:.8rem}
+
+    /* ===== Footer ===== */
+    footer{ text-align:center; color:var(--muted); padding:1.25rem 0 }
+
+    /* ===== Print to PDF ===== */
+    @media print{
+      .btn,.cta{display:none}
+      .wrap{padding:0}
+      .card{box-shadow:none}
+      a{text-decoration:none; color:inherit}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="cover"></div>
+        <div class="section" style="position:relative">
+          <img class="avatar" src="" alt="Profile photo of Bharani R">
+          <div class="name">BHARANI R</div>
+          <p class="title">Electrical Engineer</p>
+        </div>
+
+        <div class="section">
+          <h2>Contact</h2>
+          <ul class="list">
+            <li><strong>Phone:</strong> +91 87540 01808</li>
+            <li><strong>Email:</strong> <a href="mailto:bharani.r31@gmail.com">bharani.r31@gmail.com</a></li>
+            <li><strong>Address:</strong> 4/689 Srinivasa Nagar, 1st Street, Pudhu Road, Tirupur, Tamil Nadu</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Languages</h2>
+          <span class="pill">English</span>
+          <span class="pill">Hindi</span>
+          <span class="pill">Tamil</span>
+        </div>
+
+        <div class="section">
+          <h2>Expertise</h2>
+          <span class="pill">Web Design</span>
+          <span class="pill">Creative Thinking</span>
+          <span class="pill">Microsoft Word</span>
+          <span class="pill">Microsoft Excel</span>
+          <span class="pill">Python</span>
+          <span class="pill">C</span>
+          <span class="pill">C++</span>
+        </div>
+
+        <div class="section">
+          <h2>Personal profile</h2>
+          <ul class="list">
+            <li><strong>Name:</strong> Bharani</li>
+            <li><strong>Father’s Name:</strong> Radhakrishnan</li>
+            <li><strong>Mother’s Name:</strong> Thangamani</li>
+            <li><strong>Address:</strong> 4/689 Srinivasa Nagar, Pudhu Road, Tirupur, Tamil Nadu</li>
+            <li><strong>Date of Birth:</strong> 13/03/2007</li>
+            <li><strong>Age:</strong> 16</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="hero card">
+          <h1>Electrical Engineer focused on reliable, efficient systems</h1>
+          <p>Highly motivated and self-driven electrical professional with 3+ years of experience in Electrical & Electronics Engineering. Proven ability to work independently and within teams to achieve project goals, with strong problem-solving and attention to detail.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn-outline" href="#" id="resumeLink">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="block card">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <strong>B.E in Electrical Engineering</strong><br>
+            Government College of Engineering, Salem
+          </div>
+          <div class="edu-item">
+            <strong>High School – Vivekananda Vidyalaya Matriculation HSS</strong><br>
+            Major: Computer Science • Marks: 77%
+          </div>
+        </div>
+
+        <div class="block card">
+          <h3>Professional profile</h3>
+          <p>Excellent communication and interpersonal skills, with experience integrating standards and compliance in industrial environments. Seeking a challenging position in a reputable organization to apply skills and contribute to company growth.</p>
+        </div>
+
+        <div class="block card">
+          <h3>Projects & focus areas</h3>
+          <div class="grid-2">
+            <div class="proj">
+              <h4>Panel Safety Audit & Compliance</h4>
+              <p>Reviewed LT/HT panels for safety, prepared checklists, and implemented corrective actions aligned with codes.</p>
+              <ul class="tags"><li>Safety</li><li>Compliance</li><li>Inspection</li></ul>
+            </div>
+            <div class="proj">
+              <h4>Motor Control Automation</h4>
+              <p>Optimized control logic with interlocks and fault diagnostics to improve uptime and operator safety.</p>
+              <ul class="tags"><li>PLC</li><li>Drives</li><li>Automation</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="block card">
+          <h3>References</h3>
+          <ul class="list">
+            <li><strong>Dr. N.K. Venkatesan</strong> — Government College of Engineering, Salem — Phone: +91 99521 64455</li>
+          </ul>
+        </div>
+
+        <div class="block card" id="contact">
+          <h3>Contact Bharani</h3>
+          <form id="contactForm">
+            <div style="display:grid; gap:.6rem; max-width:560px">
+              <div style="display:grid; gap:.3rem">
+                <label for="name">Name</label>
+                <input id="name" type="text" required>
+              </div>
+              <div style="display:grid; gap:.3rem">
+                <label for="email">Email</label>
+                <input id="email" type="email" required>
+              </div>
+              <div style="display:grid; gap:.3rem">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+              </div>
+              <div style="display:flex; gap:.5rem; align-items:center">
+                <button class="btn" type="submit">Send message</button>
+                <span id="formStatus" style="color:var(--muted)"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </section>
+    </div>
+
+    <footer>
+      © 2025 Bharani R • Built as a single‑file portfolio • Print to PDF supported
+    </footer>
+  </div>
+
+  <script>
+    // Optional: wire up resume link if you add a resume.pdf next to index.html
+    (function(){
+      const resume = 'resume.pdf'; // place resume.pdf in the repo root
+      const link = document.getElementById('resumeLink');
+      if(link){
+        link.href = resume;
+        link.setAttribute('download', 'Bharani_R_Resume.pdf');
+      }
+    })();
+
+    // Simple contact form UX (no backend; replace with Formspree/Netlify to send emails)
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Sending...';
+      await new Promise(r => setTimeout(r, 1200));
+      status.textContent = 'Thanks! I will get back to you soon.';
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
